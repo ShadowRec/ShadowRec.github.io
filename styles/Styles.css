@@ -1,0 +1,19 @@
+
+.body{
+    font-family: "oswald", sans-serif;
+    font-size: 16px;
+    font-weight:600 ;
+    font-style: normal;
+    line-height: 1.375;
+
+}
+
+.page-header__nav-link{
+    color:brown;
+    margin: 0 25px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+
+}

@@ -1,0 +1,259 @@
+.home{
+    padding-top: 147px;
+}
+.main-header
+{
+    padding:100px,0;
+}
+.main-header__title ,.main-header__text
+{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: "lora",sans-serif;
+    font-weight: 400;
+    text-transform:uppercase;
+    text-align:center;
+    line-height: normal;
+    font-size: 45px;
+    color:black;
+}
+.main-header__title{
+    margin:0,0,70px;
+   
+}
+.main-header__text
+{   
+    margin: 0  auto;
+    max-width: 1400px;
+    width: 100%;
+}
+.main-header__picture
+{
+    display: block;
+    margin-bottom: 70px;
+    position: relative;
+    width: 100%;
+}
+.main-header__picture::before
+{
+    content:'';
+    display: block;
+    width: 100%;
+    padding-top: 16.92%;
+}
+
+
+.body{
+    font-family: "oswald", sans-serif;
+    
+    font-size: 16px;
+    font-weight:600 ;
+    font-style: normal;
+    line-height: 1.375;
+
+}
+.page-header__container, .events_container
+{
+    display: flex;
+    align-items:center ;
+    position: relative;
+    justify-content: space-between;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: 40px ;
+    padding-right: 40px;
+    max-width: 1414px;
+    width: 100%;
+}
+
+
+.page-header__nav
+{
+    display: flex;
+    align-items: baseline;
+
+    
+}
+.page-header__nav-link{
+    color:brown;
+    
+    margin: 0 25px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+
+}
+.page-header
+{  
+   
+    
+}
+.page-header__logo
+{
+    flex-shrink: 0;
+    font-size: 0;
+    text-decoration: none;
+    width:202px ;
+    height:147px;
+}
+.page-header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(127, 255, 212, 0.70);
+    @support (backdrop-filter:blur(10px)){
+        backdrop-filter:blur(10px);
+        background-color: rgba(127, 255, 212, 0.70);
+   
+}
+
+}
+
+.page-header__user-btn{
+    box-sizing: border-box;
+    background-color: aliceblue;
+    padding: 15px 40px ;
+    border: 2px solid black;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 600;
+    color:blue;
+    text-decoration: none;
+}
+.page-header__logo_img
+{
+    width: 100%;
+    height: 100%;
+}
+.main-header__img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.events
+{
+    padding-top: 147px;
+}
+.title{
+    box-sizing: border-box;
+    padding: 7px 45px 9px;
+    max-width: 624px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    font-family: Lora;
+    font-size:36px;
+    font-weight: 500;
+    color: aliceblue;
+    font-style: normal;
+    text-transform: uppercase;
+    margin:0 0 150px;
+
+
+}
+.events_container{
+    flex-direction: column;
+    
+}
+.events_title{
+    align-self: center;
+}
+.listing{
+    display: flex;
+    flex-wrap: wrap;
+    gap:120px 60px;
+
+}
+.listing__card-event{
+    max-width: 405px;
+    width:calc(33.333% - 40px);
+}
+.card_event__picture-img{
+    position: absolute;
+    top:0;
+    left:0;
+   
+   
+    
+    width: 100%;
+    height: 100%;
+    
+    object-fit: contain;
+
+  
+}
+.card-event{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+}
+.card-event__link{
+    text-decoration: none;
+    flex-direction: column;
+}
+.card-event__link::hover, .card-event__title
+{
+    color: rgb(255, 0, 0);
+    text-decoration-color: rgb(255, 0, 0);
+}
+.card-event__picture{
+    position: relative;
+    display: block;
+    margin-bottom: 25px;
+}
+.card-event__picture::before{
+    content: '';
+    display: block;
+    width: 100%;
+    padding-bottom: 107.160%;
+}
+.card-event__title{
+    min-height: 64px;
+    margin: 0 0 auto;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:black;
+    transition: color 0.2s ,text-decoration-color 0.23s;
+
+
+}
+
+.card-evet__text{
+    margin: 15px 0;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+
+
+}
+.card-event__time{
+    margin-top: auto;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+
+}

@@ -25,10 +25,32 @@
         <a href="#" class="page-header__nav-link">Blog</a>
         <a href="#" class="page-header__nav-link">Abou Us</a>
         <a href="#" class="page-header__nav-link">Our contacts</a>
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">
+            user_name
+          </a>
+
+        </div>
+        <a href="#" class="page-header__user-btn">
+          log in
+        </a>
       </nav>
-      <a href="#" class="btn page-header__user-btn">
-        Log in
-      </a>
+
+      <div class="page-header__right-block">
+
+        <button type="Button" class="page-header__nav-toggle" id="js-navToggle">
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/Vector.svg#door"></use>
+            </svg>
+          </a>
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+        </button>
+
+      </div>
+    </div>
     </div>
   </header>
 
@@ -51,7 +73,19 @@
         <p class="main-header__text">For people with shinning heart and great desire. Place for real things.</p>
       </header>
       <section class="offers home__offers">
-
+        <div class="offer__container">
+          <h1 class="offer__title">
+            I WANT:
+          </h1>
+          <div class="offer__button_container">
+            <button class="offer__button__red" id="js-eventOpenBtn">
+              Hold an event
+            </button>
+            <button class="offer__button__white">
+              Become tenant
+            </button>
+          </div>
+        </div>
       </section>
       <section class="about home__about">
         <div class="about__container">
@@ -200,7 +234,7 @@
                 <article class="card-event listing__event-card">
                   <a href=event1.html class="card-event__link">
                     <picture class="card-event__picture">
-                      <img src="assets/images/slipknot.jpg" width=405px height=434px alt="nirvana" class="card-event__picture-img" />
+                      <img src="assets/images/slipknot.jpg" width=405px height=434px alt="nirvana" class="card-event__picture-img">
                     </picture>
                     <h4 class="card-event__title">Let's listen some of Slipknot!</h4>
                     <p class="card-event__text">This albom is known as one of the hardest groups' alboms. Heavy bass, master drum combos and everyone's favorite barrel!</p>
@@ -210,7 +244,7 @@
                 <article class="card-event listing__event-card">
                   <a href=https://www.youtube.com/watch?v=if1XqTvw_1k&t=705s&ab_channel=soulscape. class="card-event__link">
                     <picture class="card-event__picture">
-                      <img src="assets/images/Calm.jpg" width=405px height=434px alt="BL" class="card-event__picture-img" />
+                      <img src="assets/images/Calm.jpg" width=405px height=434px alt="BL" class="card-event__picture-img">
                     </picture>
                     <h4 class="card-event__title">Beatyfull and calm music for special autmosphere!</h4>
                     <p class="card-event__text">This music can make youl soul resonate with it's notes! Listen to it, and you will feel special mood!</p>
@@ -220,7 +254,7 @@
                 <article class="card-event listing__event-card">
                   <a href=https://www.youtube.com/watch?v=HcxMJGOHQmY&ab_channel=ZeroCashValue-Topic class="card-event__link">
                     <picture class="card-event__picture">
-                      <img src="assets/images/phonk.jpg" width=405px height=434px alt="BL" class="card-event__picture-img" />
+                      <img src="assets/images/phonk.jpg" width=405px height=434px alt="BL" class="card-event__picture-img">
                     </picture>
                     <h4 class="card-event__title">Hard music for hard tasks!</h4>
                     <p class="card-event__text">Unusual music for hard training! This beats and bass could make you feel the true power of your body!</p>
@@ -350,10 +384,10 @@
       </div>
     </div>
   </footer>
-  <div class="pp">
+  <div class="pp" id="js-eventPP">
     <div class="pp__container">
       <div class="pp_sticky-close">
-        <button type="button" class="pp__sticky-btn">
+        <button type="button" class="pp__sticky-btn js-ppCloseBtn">
           <svg class="pp__btn-icon" width="24px" height="24px">
             <use xlink:href="assets/icons/symbols.svg#x"></use>
           </svg>
@@ -363,7 +397,7 @@
         <h3 class="pp__title">
           fill the form
           <br />
-          and we will choose place for you!
+          and we will find place!
         </h3>
         <div class="pp__form form">
           <div class="form__list">
@@ -442,7 +476,7 @@
             <div class="form__list form__list--mb50">
               <label class="field__field field__input--w50 field">
                 <span>
-                  Имя*
+                  Name*
                 </span>
                 <input type="text" class="field__input" placeholder="Name" name="name" required />
 
@@ -496,7 +530,7 @@
                 <button type="submit" class="form__btn btn">
                   send
                 </button>
-                <button type="button" class="form__btn btn">
+                <button type="button" class="form__btn  btn  js-ppCloseBtn">
                   close
                 </button>
               </div>
@@ -507,5 +541,6 @@
     </div>
   </div>
 </body>
+<script src="scripts/main.min.js"></script>
 
 </html>

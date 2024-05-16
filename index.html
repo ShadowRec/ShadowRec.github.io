@@ -304,6 +304,7 @@
       </d>
 
       <div class="doit home__doit">
+
         <section class="contacts home__contacts">
           <div class="contacts__container">
             <h2 class="contacts__title section-title">
@@ -368,10 +369,7 @@
                   </div>
                 </div>
               </div>
-              <div class="contacts__map">
-                <img src="assets/images/map.jpg" alt="mapa">
-
-              </div>
+              <div class="" id="js-contactsMap"></div>
             </div>
           </div>
         </section>
@@ -380,6 +378,7 @@
     </div>
     </header>
   </main>
+
 
   <footer class="page-footer">
     <div class="page-footer__container">
@@ -525,11 +524,11 @@
                 <span class="field__label">
                   Phone Nubmer*
                 </span>
-                <input type="tel" class="field__input" placeholder="+7" name="Phone type="" required/>
- 
- 
-                         </label>
-                         <label class=" field__field field__input--w50 field">
+                <input class="field__input js-mobileMask" type="tel" placeholder="Phone Number" name="phone" required />
+
+
+              </label>
+              <label class="field__field field__input--w50 field">
                 <span class="field__label">
                   Email*
                 </span>
@@ -572,6 +571,14 @@
     </div>
   </div>
 </body>
+
+<script src="scripts/jquery-3.7.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="scripts/jquery.mask.min.js"></script>
+<script src="jquery.selectric.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key="></script>
+<script src="scripts/main.min.js"></script>
 <script src="scripts/swiper-bundle.min.js"></script>
 <script src="scripts/main.min.js"></script>
 
